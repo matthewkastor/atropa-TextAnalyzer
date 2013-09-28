@@ -7,20 +7,12 @@ JavaScript utility for analyzing text.
 The current published version:
 
 ```
-npm install atropa-TextAnalyzer
-```
-
-The bleeding edge development version:
-
-```
 npm install git+https://github.com/matthewkastor/atropa-TextAnalyzer.git#master
 ```
 
 For some packages I simply publish to the `gh-pages` branch since it's easier to
  generate web docs in the repo and push the whole thing. Check the repo
  if you try installing the `master` branch and don't get what you expect.
-
-This package lives at: [https://npmjs.org/package/atropa-TextAnalyzer](https://npmjs.org/package/atropa-TextAnalyzer)
 
 Source code available at: [https://github.com/matthewkastor/atropa-TextAnalyzer/](https://github.com/matthewkastor/atropa-TextAnalyzer/)
 
