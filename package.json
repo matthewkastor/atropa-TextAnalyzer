@@ -1,6 +1,6 @@
 {
     "name": "atropa-TextAnalyzer",
-    "version": "2013.09.29-238",
+    "version": "2013.09.30-2453",
     "description": "JavaScript utility for analyzing text.",
     "main": "./src/atropa-TextAnalyzer.js",
     "directories": {
