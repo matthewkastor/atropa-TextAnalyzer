@@ -49,7 +49,6 @@ atropa.setAsOptionalArg = require('atropa-setAsOptionalArg').setAsOptionalArg;
  * @requires atropa.string
  * @requires atropa.arrays
  * @requires atropa.setAsOptionalArg
- * @see <a href="../../../AtropaToolboxTests.html?spec=atropa.TextAnalyzer">tests</a>
  */
 atropa.TextAnalyzer = function TextAnalyzer(text) {
     "use strict";

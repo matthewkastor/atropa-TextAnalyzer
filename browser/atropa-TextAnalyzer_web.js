@@ -106,7 +106,6 @@ atropa.setAsOptionalArg = require('atropa-setAsOptionalArg').setAsOptionalArg;
  * @requires atropa.string
  * @requires atropa.arrays
  * @requires atropa.setAsOptionalArg
- * @see <a href="../../../AtropaToolboxTests.html?spec=atropa.TextAnalyzer">tests</a>
  */
 atropa.TextAnalyzer = function TextAnalyzer(text) {
     "use strict";
@@ -265,7 +264,6 @@ atropa.inquire = require('atropa-inquire').inquire;
  *  ☭ Hial Atropa!! ☭
  * @version 20130221
  * @namespace Utilities for handling arrays.
- * @see <a href="../../../AtropaToolboxTests.html?spec=atropa.arrays">tests</a>
  */
 atropa.arrays = {};
 /**
@@ -818,7 +816,6 @@ var atropa = require('atropa-header');
  *  ☭ Hial Atropa!! ☭
  * @version 20120909
  * @namespace Container for functions that test the state of inputs.
- * @see <a href="../../../AtropaToolboxTests.html?spec=atropa.inquire">tests</a>
  */
 atropa.inquire = {};
 /**
@@ -940,7 +937,6 @@ var atropa = require('atropa-header');
  *  ☭ Hial Atropa!! ☭
  * @version 20120909
  * @namespace Container for regex functions.
- * @see <a href="../../../AtropaToolboxTests.html?spec=atropa.regex">tests</a>
  */
 atropa.regex = {};
 /**
@@ -1048,7 +1044,6 @@ var atropa = require('atropa-header');
  * @returns {Mixed} Returns the default value supplied when the optional
  * argument is undefined or null. Otherwise, the supplied optional argument
  * is returned.
- * @see <a href="../../../AtropaToolboxTests.html?spec=atropa.setAsOptionalArg">tests</a>
  */
 atropa.setAsOptionalArg = function (defaultVal, optionalArg) {
     "use strict";
@@ -1113,7 +1108,6 @@ atropa.arrays = require('atropa-arrays').arrays;
  *  ☭ Hial Atropa!! ☭
  * @namespace A few utilities for manipulating strings.
  * @requires atropa.regex.patterns
- * @see <a href="../../../AtropaToolboxTests.html?spec=atropa.string">tests</a>
  */
 atropa.string = {};
 /**
