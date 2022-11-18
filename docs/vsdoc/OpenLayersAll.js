@@ -25,11 +25,17 @@
     
 
     window.atropa = {
-        /// <summary></summary>
-        /// <field name="data" type="">Container for gobal data related to the classes and functions.</field>
-        /// <field name="string" type="">A few utilities for manipulating strings.</field>
-        /// <field name="arrays" type="">Utilities for handling arrays.</field>
+        /// <summary>Container for all Glorious classes, functions, etc.</summary>
         /// <returns type="atropa"/>
+      
+        /// <field name="data" type="">Container for gobal data related to the classes and functions.</field>
+        data : {}, 
+      
+        /// <field name="string" type="">A few utilities for manipulating strings.</field>
+        string : {}, 
+      
+        /// <field name="arrays" type="">Utilities for handling arrays.</field>
+        arrays : {}, 
                 
         supportCheck: function(className, errorMessage) {
             /// <summary>Checks whether this class has been marked as unsupported and throws an 
@@ -79,7 +85,7 @@
     window.atropa = window.atropa || {};
 
     window.atropa.arrays = {
-        /// <summary></summary>
+        /// <summary>Utilities for handling arrays.</summary>
         /// <returns type="atropa.arrays"/>
                 
         match: function(array1, array2) {
@@ -91,11 +97,11 @@
             ///  element order.</returns>
         }, 
         
-        subtract: function(a, (minuend)) {
+        subtract: function(a, fromB) {
             /// <summary>Subtracts one array from another array based on the unique values in both
             ///  sets.</summary>
             /// <param name="a" type="Array">(subtrahend) The array to subtract.</param>
-            /// <param name="(minuend)" type="Array">fromB The array with elements duplicated in &lt;code&gt;a&lt;/code&gt;</param>
+            /// <param name="fromB" type="Array">(minuend) The array with elements duplicated in &lt;code&gt;a&lt;/code&gt;</param>
             /// <returns type="Array">Returns a new array containing only the unique
             ///  values found in &lt;code&gt;fromB&lt;/code&gt; that are not present in &lt;code&gt;a&lt;/code&gt;</returns>
         }, 
@@ -161,7 +167,7 @@
             /// <param name="arr" type=""></param>
         }, 
         
-        "delete": function(arr, index) {
+        deleteElement: function(arr, index) {
             /// <summary>Deletes the given element from the array at the given index. It basically
             ///  does what you would expect the delete operator to do, except the delete
             ///  operator doesn&apos;t do what you would expect.</summary>
@@ -187,7 +193,7 @@
     window.atropa = window.atropa || {};
 
     window.atropa.data = {
-        /// <summary></summary>
+        /// <summary>Container for gobal data related to the classes and functions.</summary>
         /// <returns type="atropa.data"/>
                 
     };
@@ -206,7 +212,7 @@
     window.atropa = window.atropa || {};
 
     window.atropa.string = {
-        /// <summary></summary>
+        /// <summary>A few utilities for manipulating strings.</summary>
         /// <returns type="atropa.string"/>
                 
         removeRepeatedWord: function(string) {
@@ -326,13 +332,15 @@
     window.atropa = window.atropa || {};
 
     window.atropa.TextAnalyzer = function(text){
-        /// <summary></summary>
+        /// <summary>Represents a utility for analyzing text.</summary>
         /// <param name="text" type="String">The text to analyze.</param>
         /// <field name="text" type="String">The supplied text. Defaults to an empty string.</field>
+        text : new String(), 
         /// <field name="wordCount" type="Number">Gives the count of words in the text. Defaults to 0.</field>
+        wordCount : new Number(), 
         /// <field name="words" type="Array">An array of every word in the supplied text.
         ///  Defaults to an empty array.</field>
-        /// <returns type="atropa.TextAnalyzer"/>
+        words : new Array(), 
     };
 
     var $x = window.atropa.TextAnalyzer;

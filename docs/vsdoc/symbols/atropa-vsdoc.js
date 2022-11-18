@@ -5,11 +5,17 @@
     
 
     window.atropa = {
-        /// <summary></summary>
-        /// <field name="data" type="">Container for gobal data related to the classes and functions.</field>
-        /// <field name="string" type="">A few utilities for manipulating strings.</field>
-        /// <field name="arrays" type="">Utilities for handling arrays.</field>
+        /// <summary>Container for all Glorious classes, functions, etc.</summary>
         /// <returns type="atropa"/>
+      
+        /// <field name="data" type="">Container for gobal data related to the classes and functions.</field>
+        data : {}, 
+      
+        /// <field name="string" type="">A few utilities for manipulating strings.</field>
+        string : {}, 
+      
+        /// <field name="arrays" type="">Utilities for handling arrays.</field>
+        arrays : {}, 
                 
         supportCheck: function(className, errorMessage) {
             /// <summary>Checks whether this class has been marked as unsupported and throws an 
